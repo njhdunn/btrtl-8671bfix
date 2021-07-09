@@ -2,6 +2,9 @@ CURRENT = $(shell uname -r)
 KDIR = /lib/modules/$(CURRENT)/build
 PWD = $(shell pwd)
 
+
+.PHONY: install clean
+
 obj-m := btrtl.o
 
 default:
